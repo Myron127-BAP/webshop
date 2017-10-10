@@ -32,7 +32,7 @@ include 'inc\Database.inc.php';
         </ul>
     </div>
 </nav>
-<!-- Form shit -->
+<!-- Form shitq -->
 
 <div class="container">
     <div class="card-panel red lighten-5">
