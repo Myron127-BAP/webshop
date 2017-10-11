@@ -11,12 +11,10 @@
   <link href="../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <?php
-include 'inc\Database.inc.php';
-  ?>
+
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="login.html">Login</a></li>
-    <li><a href="register.html">Register</a></li>
+    <li><a href="Login.php">Login</a></li>
+    <li><a href="Registreren.php">Register</a></li>
     <li class="divider"></li>
     <li><a href="#!">three</a></li>
   </ul>
@@ -31,10 +29,11 @@ include 'inc\Database.inc.php';
       </ul>
     </div>
   </nav>
+
   <!-- Form shit -->
 
-  <div class="container">
-    <div class="card-panel red lighten-5">
+  <div class="container ">
+    <div class="card-panel login">
     <div class="row">
       <div class="col s3 offset-s4">
         <div class="input-field col s12">

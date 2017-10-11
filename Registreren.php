@@ -12,7 +12,7 @@
 </head>
 <body>
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="login.php">Login</a></li>
+    <li><a href="Login.php">Login</a></li>
     <li><a href="register.php">Register</a></li>
     <li class="divider"></li>
     <li><a href="#!">three</a></li>
