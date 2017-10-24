@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>Log in</title>
 
-    <!-- CSS  -->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../webshop/webshop/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -24,6 +24,7 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="#">#</a></li>
             <li><a href="#">#</a></li>
+
             <!-- Dropdown Tligger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
             </li>
