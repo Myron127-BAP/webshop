@@ -12,7 +12,7 @@
     <title>Log in</title>
 
 </head>
-<body>
+<body background="test.gif">
 
 <?php include_once './inc/Header.php'; ?>
 

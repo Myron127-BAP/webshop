@@ -12,7 +12,7 @@
   <title>Registreren</title>
 
 </head>
-<body>
+<body background="Galaxy.gif">
 
 <?php include_once './inc/Header.php'; ?>
 
