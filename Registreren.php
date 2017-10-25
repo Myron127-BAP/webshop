@@ -13,9 +13,10 @@
 
 </head>
 <body background="Galaxy.gif">
-
-<?php include_once './inc/Header.php'; ?>
-
+<header>
+    <?php include_once './inc/Header.php'; ?>
+</header>
+    <main>
 <div class="container">
     <div class="row">
         <div class="col s5 offset-m3">
@@ -47,10 +48,11 @@
         </div>
     </div>
 </div>
-
+    </main>
   <!--  Scripts-->
-  <?php include_once './inc/Footer.php'; ?>
-
+<footer>
+    <?php include_once './inc/Footer.php'; ?>
+</footer>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>

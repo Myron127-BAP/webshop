@@ -11,15 +11,19 @@
 
     <title>Game Odyssey</title>
 
-
-
 </head>
 <body background="test.gif">
-
+<header>
 <?php include_once './inc/Header.php'; ?>
+</header>
 
+<main>
+
+</main>
+
+<footer>
 <?php include_once './inc/Footer.php'; ?>
-
+</footer>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>

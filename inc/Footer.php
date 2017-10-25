@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col m6 s12">
                 <h5 class="white-text">BAP TEAM</h5>
-                <p class="gray-text text-lighten-4">TEST</p>
+                <p class="gray-text text-lighten-4">Het BAPTeam Bestaat uit: Leroy, Ralph, Sam en Myron</p>
             </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links:</h5>
