@@ -2,69 +2,60 @@
 <html lang="nl">
 <head>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
   <title>Registreren</title>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../../webshop/webshop/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="Login.php">Login</a></li>
-    <li><a href="Registreren.php">Register</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Log uit</a></li>
-  </ul>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="Index.php" class="brand-logo">Home</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">#</a></li>
-        <li><a href="#">#</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
+<body background="Galaxy.gif">
+<header>
+    <?php include_once './inc/Header.php'; ?>
+</header>
+    <main>
+<div class="container">
+    <div class="row">
+        <div class="col s5 offset-m3">
+            <div class="card-panel login">
+                <div class="card-body">
+                    <img src="" alt="">
+                    <h3>Registreren</h3>
+                </div>
+                <div class="input-field">
+                    <input id="first_name_login" type="text" class="validate">
+                    <label for="first_name">Gebruikersnaam</label>
+                </div>
+                <div class="input-field">
+                    <input id="password_login" type="password" class="validate">
+                    <label for="password">Wachtwoord</label>
+                </div>
+                <div class="input-field">
+                    <input id="password_login2" type="password" class="validate">
+                    <label for="password">Herhaal Wachtwoord</label>
+                </div>
+                <div class="input-field">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <button class="btn waves-effect waves-light blue" type="submit" name="Login">Login
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
     </div>
-  </nav>
-
-  <div class="row">
-    <form class="col m4">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="Gebruikersnaam" type="text" class="validate">
-          <label for="last_name">Gebruikers naam</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Wachtwoord</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password_repeat" type="password" class="validate">
-          <label for="password">Herhaal Wachtwoord</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Registreer
-<i class="material-icons right">send</i>
-</button>
-    </form>
-  </div>
-
+</div>
+    </main>
   <!--  Scripts-->
-  <?php include_once './inc/footer.php'; ?>
+<footer>
+    <?php include_once './inc/Footer.php'; ?>
+</footer>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../webshop/webshop/js/materialize.js"></script>
-  <script src="../../webshop/webshop/js/init.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
 </body>
 </html>
