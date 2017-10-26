@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
     <title>Log in</title>
-
 </head>
 <body background="test.gif">
 <header>
@@ -26,6 +25,7 @@
                         <img src="" alt="">
                     <h3>Inloggen</h3>
                 </div>
+                <form action="" method="post">
                 <div class="input-field">
                     <input id="first_name_login" type="text" class="validate">
                     <label for="first_name">Gebruikers naam</label>
@@ -37,6 +37,7 @@
                 <button class="btn waves-effect waves-light blue" type="submit" name="Login">Login
                     <i class="material-icons right">send</i>
                 </button>
+                </form>
             </div>
         </div>
     </div>

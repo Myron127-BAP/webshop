@@ -1,18 +1,22 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Webshop";
+function connect()
+{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Webshop";
 // Submit Data naar Database
 
-$con = new mysqli($servername,$username,$password,$dbname);
+    $con = new mysqli($servername, $username, $password, $dbname);
 
-if ($con->connect_error) {
+    if ($con->connect_error) {
 
-    die("Connection mislukt: " . $con->connect_error);
+        die("Connection mislukt: " . $con->connect_error);
 
+    }
 }
-else {
+
+/*else {
     $sql = "CREATE TABLE Gebruikers (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Gebruikersnaam VARCHAR(30) NOT NULL,
@@ -27,5 +31,5 @@ reg_date TIMESTAMP
     }
 
 }
-
+*/
 ?>
