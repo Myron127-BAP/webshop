@@ -1,6 +1,5 @@
 <?php
-function connect()
-{
+
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -14,7 +13,7 @@ function connect()
         die("Connection mislukt: " . $con->connect_error);
 
     }
-}
+
 
 /*else {
     $sql = "CREATE TABLE Gebruikers (

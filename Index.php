@@ -14,7 +14,9 @@
 </head>
 <body background="test.gif">
 <header>
-<?php include_once './inc/Header.php'; ?>
+<?php include_once './inc/Header.php';
+
+?>
 </header>
 
 <main>

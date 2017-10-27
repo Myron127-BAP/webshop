@@ -31,19 +31,19 @@
                 </div>
                 <form action="#" method="post">
                 <div class="input-field">
-                    <input id="Username_Register" type="text" class="validate">
+                    <input id="Username_Registere" name="Username_Register" type="text" class="validate">
                     <label for="first_name">Gebruikersnaam</label>
                 </div>
                 <div class="input-field">
-                    <input id="password_Register" type="password" class="validate">
+                    <input id="password_Registere" name="password_Register" type="password" class="validate">
                     <label for="password">Wachtwoord</label>
                 </div>
                 <div class="input-field">
-                    <input id="password_Register2" type="password" class="validate">
+                    <input id="password_Register2" name="password_register2" type="password" class="validate">
                     <label for="password">Herhaal Wachtwoord</label>
                 </div>
                 <div class="input-field">
-                    <input id="email_Register" type="email" class="validate">
+                    <input id="email_Registere" name="email_Register" type="email" class="validate">
                     <label for="email">Email</label>
                 </div>
                 <input type="submit" name="Registreere" value="Registreer">
