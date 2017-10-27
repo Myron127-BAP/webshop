@@ -12,28 +12,8 @@ $password = "";
 $dbname = "Webshop";
 // Submit Data naar Database
 include 'Database.inc.php';
-/*
-if(isset($_POST['Registreere'])) {
-$con = new mysqli($servername, $username, $password, $dbname);
-
-if ($con->connect_error) {
-
-    die("Connection mislukt: " . $con->connect_error);
-
-}
-else {
-    $Naam = $con ->real_escape_string($_POST['Username_Register']);
-    $Email = $con ->real_escape_string($_POST['email_Register']);
-    $Wachtwoord = md5($_POST['password_Register']);
-
-    $SQLinsert = "INSERT INTO gebruikers (Gebruikersnaam, Wachtwoord, Email)
-  VALUES ('$Naam', '$Wachtwoord', '$Email')";
-}
 
 
-
-}
-*/
 session_start();
 $_SESSION['message'] = '';
 
