@@ -25,7 +25,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     {
         $username = $con ->real_escape_string($_POST['Username_Register']);
         $email = $conn->real_escape_string($_POST['email_Register']);
-        $password = md5($_POST['password_Register']);
+        $password = password_hash($_POST['password_Register'], PASSWORD_BCRYPT);
+
 
         $_SESSION['username'] = $username;
 
