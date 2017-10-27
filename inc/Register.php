@@ -7,6 +7,13 @@
  */
 include 'Database.inc.php';
 if(isset($_POST['Registreere']))
-{
-    echo "NIGGER";
-}
+connect();
+
+        $Naam = $con->real_escape_string($_POST['Username_Register']);
+        $Email = $con->real_escape_string($_POST['email_Register']);
+        $Wachtwoord = md5($_POST['password_Register']);
+
+        $SQLinsert = "INSERT INTO gebruiker (Naam, Plaats, Leeftijd)
+  VALUES ('$Naam', '$Plaats', '$Leeftijd')";
+
+/* NIET AAN ZITTEN EIGENDOM VAN LEROY */
