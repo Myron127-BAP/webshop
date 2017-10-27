@@ -16,4 +16,4 @@ connect();
         $SQLinsert = "INSERT INTO gebruiker (Naam, Plaats, Leeftijd)
   VALUES ('$Naam', '$Plaats', '$Leeftijd')";
 
-/* NIET AAN ZITTEN EIGENDOM VAN LEROY */
+/* NIET AAN ZITTEN EIGENDOM VAN Myron */
