@@ -25,13 +25,13 @@
                         <img src="" alt="">
                     <h3>Inloggen</h3>
                 </div>
-                <form action="" method="post">
+                <form action="./inc/Login.php" method="post">
                 <div class="input-field">
-                    <input id="first_name_login" type="text" class="validate">
+                    <input name="name" id="first_name_login" type="text" class="validate">
                     <label for="first_name">Gebruikers naam</label>
                 </div>
                 <div class="input-field">
-                    <input id="password_login" type="password" class="validate">
+                    <input name="password" id="password_login" type="password" class="validate">
                     <label for="password">Wachtwoord</label>
                 </div>
                 <button class="btn waves-effect waves-light blue" type="submit" name="Login">Login
