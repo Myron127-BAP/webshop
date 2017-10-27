@@ -13,7 +13,8 @@
 </head>
 <body background="test.gif">
 <header>
-<?php include_once './inc/Header.php'; ?>
+<?php include_once './inc/Header.php';
+include './inc/Users.php';?>
 </header>
 <main>
 <!-- Login Container -->

@@ -14,7 +14,11 @@
 </head>
 <body background="Galaxy.gif">
 <header>
-    <?php include_once './inc/Header.php'; ?>
+    <?php include_once './inc/Header.php';
+    ?>
+    <?php
+    include './inc/Register.php';
+    ?>
 </header>
     <main>
 <div class="container">
@@ -25,29 +29,30 @@
                     <img src="" alt="">
                     <h3>Registreren</h3>
                 </div>
+                <form action="#" method="post">
                 <div class="input-field">
-                    <input id="first_name_login" type="text" class="validate">
+                    <input id="Username_Registere" name="Username_Register" type="text" class="validate">
                     <label for="first_name">Gebruikersnaam</label>
                 </div>
                 <div class="input-field">
-                    <input id="password_login" type="password" class="validate">
+                    <input id="password_Registere" name="password_Register" type="password" class="validate">
                     <label for="password">Wachtwoord</label>
                 </div>
                 <div class="input-field">
-                    <input id="password_login2" type="password" class="validate">
+                    <input id="password_Register2" name="password_register2" type="password" class="validate">
                     <label for="password">Herhaal Wachtwoord</label>
                 </div>
                 <div class="input-field">
-                    <input id="email" type="email" class="validate">
+                    <input id="email_Registere" name="email_Register" type="email" class="validate">
                     <label for="email">Email</label>
                 </div>
-                <button class="btn waves-effect waves-light blue" type="submit" name="Login">Login
-                    <i class="material-icons right">send</i>
-                </button>
+                <input type="submit" name="Registreere" value="Registreer">
+                </form>
             </div>
         </div>
     </div>
 </div>
+
     </main>
   <!--  Scripts-->
 <footer>
