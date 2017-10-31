@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ik niet
- * Date: 26-Oct-17
- * Time: 1:33 PM
- */
 
 $servername = "localhost";
 $username = "root";
