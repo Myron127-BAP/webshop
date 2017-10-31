@@ -11,7 +11,7 @@
 
     <title>Log in</title>
 </head>
-<body background="test.gif">
+<body background="images/Watchdogs.gif">
 <header>
 <?php include_once './inc/Header.php';
 include './inc/Users.php';?>
