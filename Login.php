@@ -33,7 +33,11 @@ include './inc/Users.php';?>
 </main>
 
 <footer>
-<?php include_once './inc/Footer.php'; ?>
+<?php include_once './inc/Footer.php';
+if($_SESSION['user'] !== null)
+{header("Location: http://localhost/webshop/Game%20webshop/Account.php");
+    exit();}
+?>
 </footer>
 
 <!--  Scripts-->

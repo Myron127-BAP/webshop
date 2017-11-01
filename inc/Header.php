@@ -4,6 +4,7 @@
 
 
 <header>
+    <?php session_start(); ?>
 <ul id="dropdown1" class="dropdown-content">
     <li><a href="Login.php">Login</a></li>
     <li><a href="Registreren.php">Register</a></li>
@@ -12,9 +13,9 @@
 </ul>
 <nav>
     <div class="nav-wrapper red">
-        <a href="Account.php" style="margin-left:15px" class="brand-logo hoverable">Home</a>
+        <a href="Index.php" style="margin-left:15px" class="brand-logo hoverable">Home</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">#</a></li>
+            <li><a id="naam" href="Account.php"></a></li>
             <li><a href="#">#</a></li>
 
             <!-- Dropdown Tligger -->
@@ -23,5 +24,10 @@
         </ul>
     </div>
 </nav>
+    <script type="text/javascript">
+        var name = '<?php echo $_SESSION['user'];?>';
+        document.getElementById('naam').innerHTML= name;
+    </script>
 </header>
+
 

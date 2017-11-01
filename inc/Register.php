@@ -7,7 +7,6 @@ $dbname = "Webshop";
 // Submit Data naar Database
 include 'Database.inc.php';
 
-    session_start();
     $_SESSION['message'] = '';
 
     $conn = new mysqli('localhost', 'root', '', 'webshop');
