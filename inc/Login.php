@@ -18,9 +18,9 @@ $con = new mysqli($servername, $username, $password, $dbname);
             $row = $result->fetch_array(MYSQLI_ASSOC);
                 if (password_verify($password_inlog, $row['Wachtwoord'])) {
                     $_SESSION['user'] = $username_inlog;
-                    header("Location: http://localhost/webshop/Game%20webshop/Account.php"); /* Redirect browser */
+                    header("Location: http://localhost/webshop/webshop/Account.php"); /* Redirect browser */
                     exit();
-                } else echo "password is incorrect";
+                } else echo "password is incorrect".$row['Wachtwoord'];
             }
             else echo "$username_inlog bestaat niet";
 

@@ -19,8 +19,8 @@
     $sql = "CREATE TABLE Gebruikers (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Gebruikersnaam VARCHAR(30) NOT NULL,
-Wachtwoord VARCHAR(30) NOT NULL,
-Email VARCHAR(50),
+Wachtwoord VARCHAR(300) NOT NULL,
+Email VARCHAR(500),
 reg_date TIMESTAMP
 )";
 
