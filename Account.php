@@ -14,11 +14,11 @@
 <body background="test.gif">
 <header>
     <?php include_once './inc/Header.php';
-    session_start();
     if($_SESSION['user'] === null)
-    {header("Location: http://localhost/webshop/Game%20webshop/Index.php");}
+    {header("Location: http://localhost/webshop/Game%20webshop/Login.php");
+    exit();}
+    echo "<p>Welkom " . $_SESSION['user'] . "</p>";
     ?>
-    <? session_start(); $naam = $_SESSION['user']; print $naam; ?>
 </header>
 
 <main>
