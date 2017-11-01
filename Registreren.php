@@ -12,7 +12,9 @@
     <title>Registreren</title>
 
 </head>
+
 <body background="images/Gaming.gif">
+
 <header>
     <?php include_once './inc/Header.php';
     ?>
@@ -21,14 +23,11 @@
     ?>
 </header>
 <main>
-
-    <link rel="stylesheet" href="" type="text/css">
-
     <div class="body-content">
         <div class="module">
             <h1>Registreren</h1>
             <form class="form" action="#" method="post" enctype="multipart/form-data" autocomplete="off">
-                <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
+                <div class="alert alert-error"></div>
                 <input type="text" placeholder="Gebruikersnaam" name="Username_Register" required />
                 <input type="password" placeholder="Wachtwoord" name="password_Register" autocomplete="new-password" required />
                 <input type="password" placeholder="Herhaal Wachtwoord" name="password_register2" autocomplete="new-password" required />
@@ -37,12 +36,13 @@
             </form>
         </div>
     </div>
-
 </main>
+
 <!--  Scripts-->
 <footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
