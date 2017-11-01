@@ -22,9 +22,10 @@ include './inc/Users.php';?>
         <div class="module">
             <h1>Inloggen</h1>
             <div class="alert alert-error"></div>
+            <form action="./inc/Login.php" method="post">
             <input type="text" placeholder="Gebruikersnaam" name="name" required />
             <input type="password" placeholder="Wachtwoord" name="password" autocomplete="new-password" required />
-            <input type="submit" value="Registeren" name="login" class="btn btn-block btn-primary" />
+            <input type="submit" value="Login" name="login" class="btn btn-block btn-primary" />
             </form>
         </div>
     </div>
