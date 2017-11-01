@@ -11,39 +11,26 @@
 
     <title>Log in</title>
 </head>
-<body background="images/Watchdogs.gif">
+<body background="images/Gaming.gif">
 <header>
 <?php include_once './inc/Header.php';
 include './inc/Users.php';?>
 </header>
 <main>
-<!-- Login Container -->
-<div class="container">
-    <div class="row">
-        <div class="col s5 offset-m3">
-            <div class="card-panel login">
-                <div class="card-body">
-                        <img src="" alt="">
-                    <h3>Inloggen</h3>
-                </div>
-                <form action="./inc/Login.php" method="post">
-                <div class="input-field">
-                    <input name="name" id="first_name_login" type="text" class="validate">
-                    <label for="first_name">Gebruikers naam</label>
-                </div>
-                <div class="input-field">
-                    <input name="password" id="password_login" type="password" class="validate">
-                    <label for="password">Wachtwoord</label>
-                </div>
-                <button class="btn waves-effect waves-light blue" type="submit" name="Login">Login
-                    <i class="material-icons right">send</i>
-                </button>
-                </form>
-            </div>
+
+    <div class="body-content">
+        <div class="module">
+            <h1>Inloggen</h1>
+            <div class="alert alert-error"></div>
+            <input type="text" placeholder="Gebruikersnaam" name="name" required />
+            <input type="password" placeholder="Wachtwoord" name="password" autocomplete="new-password" required />
+            <input type="submit" value="Registeren" name="login" class="btn btn-block btn-primary" />
+            </form>
         </div>
     </div>
-</div>
+
 </main>
+
 <footer>
 <?php include_once './inc/Footer.php'; ?>
 </footer>
