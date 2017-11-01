@@ -12,7 +12,9 @@
     <title>Registreren</title>
 
 </head>
+
 <body background="images/Gaming.gif">
+
 <header>
     <?php include_once './inc/Header.php';
     ?>
@@ -21,9 +23,6 @@
     ?>
 </header>
 <main>
-
-    <link rel="stylesheet" href="" type="text/css">
-
     <div class="body-content">
         <div class="module">
             <h1>Registreren</h1>
@@ -37,12 +36,13 @@
             </form>
         </div>
     </div>
-
 </main>
+
 <!--  Scripts-->
 <footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
