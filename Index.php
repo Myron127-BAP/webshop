@@ -14,9 +14,9 @@
 </head>
 <body background="images/Watchdogs.gif">
 <header>
-<?php include_once './inc/Header.php';
+    <?php include_once './inc/Header.php';
 
-?>
+    ?>
 </header>
 
 <main>
@@ -49,8 +49,9 @@
     </script>
 </main>
 
+
 <footer>
-<?php include_once './inc/Footer.php'; ?>
+    <?php include_once './inc/Footer.php'; ?>
 </footer>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

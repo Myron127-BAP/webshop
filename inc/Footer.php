@@ -1,5 +1,5 @@
 
-<link href="../../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 <footer class="page-footer red">
     <div class="container">
@@ -12,7 +12,7 @@
                 <h5 class="white-text">Links:</h5>
                 <ul>
                     <li><a class="grey-text text-lighten-3" href="#!">Over Ons</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                    <li><a class="grey-text text-lighten-3" href="ContactPage.php">Contact</a></li>
                 </ul>
             </div>
         </div>

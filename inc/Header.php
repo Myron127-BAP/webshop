@@ -1,6 +1,6 @@
 
 
-<link href="../../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 
 <header>
@@ -16,7 +16,7 @@
         <a href="Index.php" style="margin-left:15px" class="brand-logo hoverable">Home</a>
         <ul class="right hide-on-med-and-down">
             <li><a id="naam" href="Account.php"></a></li>
-            <li><a href="#">#</a></li>
+            <li><a href="Artikel.php?id=1">TEST</a></li>
 
             <!-- Dropdown Tligger -->
             <li><a class="dropdown-button" href="" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>

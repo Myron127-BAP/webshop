@@ -10,18 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
     <title>Log in</title>
+
 </head>
 <body background="images/Gaming.gif">
 <header>
-<?php include_once './inc/Header.php';
-include './inc/Users.php';?>
+<?php include_once './inc/Header.php';?>
 </header>
 <main>
 
     <div class="body-content">
         <div class="module">
             <h1>Inloggen</h1>
-            <div class="alert alert-error"></div>
+            <div class="alert alert-success"></div>
             <form action="./inc/Login.php" method="post">
             <input type="text" placeholder="Gebruikersnaam" name="name" required />
             <input type="password" placeholder="Wachtwoord" name="password" autocomplete="new-password" required />

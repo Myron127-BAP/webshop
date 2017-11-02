@@ -43,17 +43,21 @@ function Register()
     {
         session_start();
         $conn = new mysqli('localhost', 'root', '', 'webshop');
-
         $password_inlog = $_POST["password"];
 //$password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $username_inlog = $_POST["name"];
 
-        $sqlinsert = "SELECT wachtwoord FROM gebruikers WHERE Gebruikersnaam = '$username_inlog'";
+        $sqlinsert = "SELECT * FROM gebruikers WHERE Gebruikersnaam = '$username_inlog'";
         $result = mysqli_query($conn, $sqlinsert);
+        if ($result->num_rows >= 1) {
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+            if (password_verify($password_inlog, $row['Wachtwoord'])) {
+                $_SESSION['user'] = $username_inlog;
+                header("Location: http://localhost/webshop/Account.php"); /* Redirect browser */
+                exit();
+            } else echo "password is incorrect".$row['Wachtwoord'];
+        }
+        else echo "$username_inlog bestaat niet";
 
-        if (password_verify($password_inlog, $password_hash)) {
-            $_SESSION['user'] = $username_inlog;
-            echo "SUCCES";
-        } else echo "Username of password is incorrect";
     }
 }

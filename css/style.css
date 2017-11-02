@@ -343,5 +343,39 @@ input[type="email"]:focus
     margin-top: 100px;
 }
 
+.TitelGame
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}
+
+.BeschrijvingGame
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.PrijsGame
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.contact-page
+{
+    position:relative;
+    background-color: black;
+    height: 300px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 
 

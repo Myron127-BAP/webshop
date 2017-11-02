@@ -22,10 +22,13 @@ include 'Database.inc.php';
 
             $sql = "INSERT INTO gebruikers(Gebruikersnaam, Email, Wachtwoord)" . "VALUES ('$username', '$email', '$password_hash')";
 
-            if ($conn->query($sql) === true) {
-                $_SESSION['message'] = "$username is geregistreerd!";
-            } else {
-                $_SESSION['message'] = "Gebruiker is niet toegevoegd";
+            if ($conn->query($sql) === true)
+            {
+                $_SESSION['message'] = "$username is geregistreerd!";   
             }
+            else
+                {
+                    $_SESSION['message'] = "Gebruiker is niet toegevoegd";
+                }
         }
     }

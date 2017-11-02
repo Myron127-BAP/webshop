@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -14,29 +15,37 @@
 <body background="images/Watchdogs.gif">
 <header>
     <?php include_once './inc/Header.php';
-    if($_SESSION['user'] === null)
-    {header("Location: http://localhost/webshop/Login.php");
-    exit();}
-    //echo "<p>Welkom " . $_SESSION['user'] . "</p>";
+
     ?>
 </header>
 
 <main>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col m6 m12 blue-grey">
-                <div class="card-panel">
-                    <div class="card-body">
-                        <H2 style="color: black; font-weight: bold">Account information</H2>
-                        <hr>
-                        <p>Pas hier je settings aan babe!</p>
-                    </div>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+    </button>
 </main>
+<?php
+require 'PHPMailerAutoload.php';
+
+$mail = new PHPMailer;
+
+$mail->isSMTP();
+$mail->Host = 'smtp1.example.com;smtp2.example.com';
+$mail->SMTPAuth = true;
+$mail->Username = 'user@example.com';
+$mail->Password = 'secret';
+$mail->SMTPSecure = 'tls';
+?>
 
 <footer>
     <?php include_once './inc/Footer.php'; ?>
