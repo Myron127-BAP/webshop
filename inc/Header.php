@@ -7,7 +7,7 @@
     <?php session_start(); ?>
 <ul id="dropdown1" class="dropdown-content">
     <li><a href="Login.php">Login</a></li>
-    <li><a href="Registreren.php">Register</a></li>
+    <li><a href="Registreren.php">Registreren</a></li>
     <li class="divider"></li>
     <li><a href="inc/Logout.php">Log uit</a></li>
 </ul>
