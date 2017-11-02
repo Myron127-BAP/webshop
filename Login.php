@@ -34,6 +34,7 @@
 
 <footer>
 <?php include_once './inc/Footer.php';
+error_reporting(0);
 if($_SESSION['user'] !== null)
 {header("Location: http://localhost/webshop/Account.php");
     exit();}
