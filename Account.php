@@ -15,7 +15,7 @@
 <header>
     <?php include_once './inc/Header.php';
     if($_SESSION['user'] === null)
-    {header("Location: http://localhost/webshop/Game%20webshop/Login.php");
+    {header("Location: http://localhost/webshop/Login.php");
     exit();}
     echo "<p>Welkom " . $_SESSION['user'] . "</p>";
     ?>
