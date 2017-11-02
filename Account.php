@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <H2 style="color: black; font-weight: bold">Account information</H2>
                         <hr>
-                        <p>Pas hier je settings aan babe</p>
+                        <p>Pas hier je settings aan babe!</p>
                     </div>
                 </div>
             </div>
