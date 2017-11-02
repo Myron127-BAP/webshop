@@ -23,9 +23,12 @@ if (isset($_POST['Fetch'])) {
         $resultaat = mysqli_query($con, $sql_Haal_op);
         if (mysqli_num_rows($resultaat) > 0) {
             while ($row = mysqli_fetch_assoc($resultaat)) {
-
-                echo "Naam: " . $row["Gebruikersnaam"] . "<br>" . "Email:" . $row["Email"] . "<br>" . "Datum" .
-                    $row["reg_date"] . "<br> <br>";
+                echo '<script type="text/javascript">',
+                'Table();',
+                '</script>'
+                ;
+                echo "<tr> <th>" . $row["Gebruikersnaam"] . "</th>" . "<th>" . $row["Email"] . "</th>" . "<th>" .
+                    $row["reg_date"] . "</th> </tr>";
             }
         } else {
             echo "GEEN RESULTAAT!";
