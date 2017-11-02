@@ -343,5 +343,12 @@ input[type="email"]:focus
     margin-top: 100px;
 }
 
-
-
+.contact-page
+{
+    position:relative;
+    background-color: black;
+    height: 300px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}

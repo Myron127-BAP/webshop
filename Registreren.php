@@ -28,6 +28,7 @@
             <h1>Registreren</h1>
             <form class="form" action="#" method="post" enctype="multipart/form-data" autocomplete="off">
                 <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
+                <div class="alert alert-success"><?= $_SESSION['message'] ?></div>
                 <input type="text" placeholder="Gebruikersnaam" name="Username_Register" required />
                 <input type="password" placeholder="Wachtwoord" name="password_Register" autocomplete="new-password" required />
                 <input type="password" placeholder="Herhaal Wachtwoord" name="password_register2" autocomplete="new-password" required />

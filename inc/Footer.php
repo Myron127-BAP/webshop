@@ -12,7 +12,7 @@
                 <h5 class="white-text">Links:</h5>
                 <ul>
                     <li><a class="grey-text text-lighten-3" href="#!">Over Ons</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                    <li><a class="grey-text text-lighten-3" href="ContactPage.php">Contact</a></li>
                 </ul>
             </div>
         </div>
