@@ -13,8 +13,7 @@
 </head>
 <body background="images/Gaming.gif">
 <header>
-<?php include_once './inc/Header.php';
-include './inc/Users.php';?>
+<?php include_once './inc/Header.php';?>
 </header>
 <main>
 

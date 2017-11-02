@@ -17,11 +17,25 @@
     if($_SESSION['user'] === null)
     {header("Location: http://localhost/webshop/Login.php");
     exit();}
-    echo "<p>Welkom " . $_SESSION['user'] . "</p>";
+    //echo "<p>Welkom " . $_SESSION['user'] . "</p>";
     ?>
 </header>
 
 <main>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col m6 m12 blue-grey">
+                <div class="card-panel">
+                    <div class="card-body">
+                        <H2 style="color: black; font-weight: bold">Account information</H2>
+                        <hr>
+                        <p>Pas hier je settings aan babe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
