@@ -19,7 +19,7 @@
             <li><a href="Artikel.php?id=1">TEST</a></li>
 
             <!-- Dropdown Tligger -->
-            <li><a class="dropdown-button" href="" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
+            <li><a class="dropdown-button" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
             </li>
         </ul>
     </div>

@@ -12,7 +12,7 @@
     <title>Game Odyssey</title>
 
 </head>
-<body background="images/Watchdogs.gif">
+<body background="images/darksoulshalloween.jpg">
 <header>
     <?php include_once './inc/Header.php';
 
