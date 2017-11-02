@@ -1,5 +1,5 @@
 
-<link href="../../../webshop/webshop/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 <footer class="page-footer red">
     <div class="container">

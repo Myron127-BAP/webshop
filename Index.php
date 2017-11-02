@@ -49,6 +49,7 @@
     </script>
 </main>
 
+
 <footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>

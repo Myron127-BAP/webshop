@@ -28,7 +28,6 @@ reg_date TIMESTAMP
     } else {
         echo "Error creating table: " . $con->error;
     }
-
 }
 */
 ?>

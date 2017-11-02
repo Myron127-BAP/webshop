@@ -11,7 +11,7 @@
     <title>Game Odyssey</title>
 
 </head>
-<body background="test.gif">
+<body background="images/Watchdogs.gif">
 <header>
     <?php include_once './inc/Header.php';
     if($_SESSION['user'] === null)
