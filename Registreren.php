@@ -13,7 +13,7 @@
 
 </head>
 
-<body background="images/Gaming.gif">
+<body background="images/Gaming.gif" style="background-size: 100% 100%;">
 
 <header>
     <?php include_once './inc/Header.php';

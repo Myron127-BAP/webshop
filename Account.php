@@ -11,7 +11,7 @@
     <title>Game Odyssey</title>
 
 </head>
-<body background="images/darksoulshalloween.jpg">
+<body background="images/darksoulshalloween.jpg" style="background-size: 100% 100%;">
 <header>
     <?php include_once './inc/Header.php';
     if($_SESSION['user'] === null)
@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <H2 style="color: black; font-weight: bold">Account information</H2>
                         <hr>
-                        <p>Pas hier je settings aan!</p>
+                        <p>Pas hier je settings aan!?</p>
                 </div>
             </div>
         </div>
