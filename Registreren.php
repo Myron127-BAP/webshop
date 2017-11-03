@@ -13,13 +13,12 @@
 
 </head>
 
-<body background="images/Gaming.gif" style="background-size: 100% 100%;">
+<body background="images/Gaming.gif">
 
 <header>
     <?php include_once './inc/Header.php';
     ?>
-    <?php
-    include './inc/Register.php';
+    <?php include './inc/Register.php';
     ?>
 </header>
 <main>

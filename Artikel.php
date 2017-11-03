@@ -23,18 +23,18 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bekijk artikel ~ <?= $artikel->naam; ?></title>
+    <title>Bekijk artikel ~ <?= $artikel->artikelnaam; ?></title>
 
 </head>
 <body>
 <div class="TitelGame">
-    <?= $artikel->naam; ?>
+    <?= $artikel->artikelnaam; ?>
 </div>
 <div class="BeschrijvingGame">
-    <?= $artikel->beschrijving; ?>
+    <?= $artikel->artikelbeschrijving; ?>
 </div>
 <div class="PrijsGame">
-Kost: <?= $artikel->prijs; ?>
+Kost: <?= $artikel->artikelprijs; ?>
 </div>
 </body>
 </html>
