@@ -58,19 +58,38 @@ if (isset($_POST['Crieer'])) {
     if (!$con) {
         die("Connectie mislukt" . mysqli_connect_error());
     } else {
-$crieer = "CREATE TABLE Gebruikers (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        $crieer = "CREATE TABLE Gebruikers (
+id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Gebruikersnaam VARCHAR(30) NOT NULL,
 Wachtwoord VARCHAR(300) NOT NULL,
 Email VARCHAR(500),
 reg_date TIMESTAMP
-)";
-$resultaat2 = mysqli_query($con, $crieer);
-        if (mysqli_query($con, $crieer)) {
-
-            echo "Table Aangemaakt!";
-        } else {
-            echo "ERROR" . mysqli_error($con);
+)" ;
+        if (mysqli_multi_query($con, $crieer)) {
+            if ($result = mysqli_store_result($con)) {
+                while ($row = mysqli_fetch_array($result)) ;
+            } else {
+                echo "ERROR" . mysqli_error($con);
+            }
         }
     }
 }
+/*
+ "CREATE TABLE Gebruikers (
+id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+Gebruikersnaam VARCHAR(30) NOT NULL,
+Wachtwoord VARCHAR(300) NOT NULL,
+Email VARCHAR(500),
+reg_date TIMESTAMP
+)"  */
+
+/*
+ "CREATE TABLE artikelen(
+            id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+artikelnaam VARCHAR(255) NOT NULL,
+artikelbeschrijving TEXT NOT NULL,
+aantal INT(255) NOT NULL,
+afbeelding varchar(225),
+artikelprijs DOUBLE
+)"
+ */

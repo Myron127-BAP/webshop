@@ -40,7 +40,7 @@
                 <input type="submit" value="Delete Tables" name="Tables" class="btn btn-block btn-primary" />
                 <input type="submit" value="Create Table" name="Crieer" class="btn btn-block btn-primary" />
             </form>
-            <table style="display:none" id="Tafel">
+            <table style="display:none" class="highlight" id="Tafel">
                 <tr>
                     <th>Naam</th>
                     <th>Email</th>
