@@ -12,10 +12,9 @@
     <title>Game Odyssey</title>
 
 </head>
-<body background="images/darksoulshalloween.jpg">
+<body background="images/darksoulshalloween.jpg" style="background-size: 100% 100%;">
 <header>
     <?php include_once './inc/Header.php';
-
     ?>
 </header>
 
