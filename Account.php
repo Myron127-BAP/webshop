@@ -28,11 +28,29 @@
             <div class="col m6 m12 blue-grey">
                 <div class="card-panel">
                     <div class="card-body">
-                        <H2 style="color: black; font-weight: bold">Account information</H2>
-                        <hr>
-                        <p>Pas hier je settings aan!?</p>
+                        <?php echo "<h2>Welkom " . $_SESSION['user'] . "!</h2>"?>
+                    </div>
                 </div>
             </div>
+            <div class="col m6 m12 blue-grey">
+                <div class="card-panel">
+                    <div class="card-body">
+                       <input type="text" placeholder="Nieuwe naam" name="name" required />
+                        <br>
+                        <p>Email</p>
+                    </div>
+                </div>
+            </div>
+                <div class="col m6 m12 blue-grey">
+                    <div class="card-panel">
+                        <div class="card-body">
+                            <h5>Verander Wachtwoord</h5>
+                            <p>Nieuw wachtwoord:</p>
+                            <p>Herhaal wachtwoord:</p>
+                            <p>Oud wachtwoord: </p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </main>

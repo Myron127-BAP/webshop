@@ -1,7 +1,7 @@
 
 <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-<footer class="page-footer red">
+<footer class="page-footer blue-grey">
     <div class="container">
         <div class="row">
             <div class="col m6 s12">

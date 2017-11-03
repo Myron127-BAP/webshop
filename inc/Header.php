@@ -12,7 +12,7 @@
     <li><a href="inc/Logout.php">Log uit</a></li>
 </ul>
 <nav>
-    <div class="nav-wrapper red">
+    <div class="nav-wrapper blue-grey">
         <a href="Index.php" style="margin-left:15px" class="brand-logo hoverable">Home</a>
         <ul class="right hide-on-med-and-down">
             <li><a id="naam" href="Account.php"></a></li>
