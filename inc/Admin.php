@@ -74,6 +74,22 @@ reg_date TIMESTAMP
         }
     }
 }
+if (isset($_POST['Product_add'])) {
+    $Product_Naam = $_POST['Product_naam'];
+    $Product_Beschrijving = $_POST['Product_beschrijving'];
+    $Product_Aantal = $_POST['Product_aantal'];
+    $Product_Plaatje = $_POST['Product_plaatje'];
+    $Product_Prijs = $_POST['Product_prijs'];
+    $sql_Product = "INSERT INTO artikelen(artikelnaam, artikelbeschrijving, aantal, afbeelding, artikelprijs)" . "VALUES ('$Product_Naam', '$Product_Beschrijving', '$Product_Aantal', '$Product_Plaatje', '$Product_Prijs')";
+    if ($con->query($sql_Product) === true)
+    {
+        $_SESSION['message'] = "$username is geregistreerd!";
+    }
+    else
+    {
+        $_SESSION['message'] = "Gebruiker is niet toegevoegd";
+    }
+}
 /*
  "CREATE TABLE Gebruikers (
 id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,

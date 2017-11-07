@@ -30,16 +30,36 @@
         });
 
         $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
     </script>
     <div class="body-content">
         <div class="module">
             <h1>Admin Panel</h1>
             <div class="alert alert-error"></div>
-            <form action="#" method="post">
-                <input type="submit" value="Fetch Users" name="Fetch" class="btn btn-block btn-primary" />
-                <input type="submit" value="Delete Tables" name="Tables" class="btn btn-block btn-primary" />
-                <input type="submit" value="Create Table" name="Crieer" class="btn btn-block btn-primary" />
-            </form>
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">accessibility</i>User Related</div>
+                        <div class="collapsible-body"><span><form action="#" method="post"><input type="submit" value="Fetch Users" name="Fetch" class="btn btn-block btn-primary" /></span></div></form>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">dns</i>Table Related</div>
+                        <div class="collapsible-body"><span><form action="#" method="post"><input type="submit" value="Delete Tables" name="Tables" class="btn btn-block btn-primary" />
+                <input type="submit" value="Create Table" name="Crieer" class="btn btn-block btn-primary" /></span></div></form>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">note_add</i>Product Related</div>
+                        <div class="collapsible-body"><span><form action="#" method="post">
+                            <input type="text" placeholder="Product Naam" name="Product_naam" required />
+            <input type="text" placeholder="Beschrijving" name="Product_beschrijving" autocomplete="new-password" required />
+                                    <input type="text" placeholder="Aantal" name="Product_aantal" required />
+                                    <input type="text" placeholder="Product Plaatje" name="Product_plaatje" />
+                                    <input type="text" placeholder="Product Prijs" name="Product_prijs" required />
+                            <input type="submit" value="Add Product" name="Product_add" class="btn btn-block btn-primary" /></span></div></form>
+                    </li>
+                </ul>
             <table style="display:none" class="highlight" id="Tafel">
                 <tr>
                     <th>Naam</th>
