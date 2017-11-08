@@ -28,29 +28,44 @@
             <div class="col m6 m12 blue-grey">
                 <div class="card-panel">
                     <div class="card-body">
-                        <?php echo "<h2>Welkom " . $_SESSION['user'] . "!</h2>"?>
+                        <?php echo "<h2>Welkom " . $_SESSION['user'] . "!</h2>";
+                        include './inc/Account.php'; ?>
                     </div>
                 </div>
             </div>
             <div class="col m6 m12 blue-grey">
                 <div class="card-panel">
                     <div class="card-body">
-                       <input type="text" placeholder="Nieuwe naam" name="name" required />
-                        <br>
-                        <p>Email</p>
+                        <h5>Verander gebruikersnaam</h5>
+                       <input type="text" placeholder="Nieuwe naam" name="nieuwnaam" required />
+                        <input type="text" placeholder="Email" name="email" required />
+                        <input type="submit" value="submit" name="submitnaam" class="btn btn-block btn-primary" />
                     </div>
                 </div>
             </div>
-                <div class="col m6 m12 blue-grey">
-                    <div class="card-panel">
-                        <div class="card-body">
-                            <h5>Verander Wachtwoord</h5>
-                            <p>Nieuw wachtwoord:</p>
-                            <p>Herhaal wachtwoord:</p>
-                            <p>Oud wachtwoord: </p>
-                        </div>
+            <div class="col m6 m12 blue-grey">
+                <div class="card-panel">
+                    <div class="card-body">
+                        <h5>Verander Wachtwoord</h5>
+                        <input type="text" placeholder="Nieuw wachtwoord" name="nieuwwachtwoord" required />
+                        <input type="text" placeholder="Herhaal wachtwoord" name="herhaalwachtwoord" required />
+                        <input type="text" placeholder="Oud wachtwoord" name="oudwachtwoord" required />
+                        <input type="submit" value="submit" name="submitwachtwoord" class="btn btn-block btn-primary" />
                     </div>
                 </div>
+            </div>
+            <div class="col m6 m12 blue-grey">
+                <div class="card-panel">
+                    <div class="card-body">
+                        <h5>Gender</h5>
+                        <form>
+                        <input type="radio" name="gender" value="male" /> Male <br>
+                        <input type="radio" name="gender" value="female" /> Gender <br>
+                        <input type="submit" value="submit" name="submitwachtwoord" class="btn btn-block btn-primary" />
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

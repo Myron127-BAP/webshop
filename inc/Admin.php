@@ -99,13 +99,11 @@ Email VARCHAR(500),
 reg_date TIMESTAMP
 )"  */
 
-/*
- "CREATE TABLE artikelen(
+/* "CREATE TABLE artikelen(
             id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 artikelnaam VARCHAR(255) NOT NULL,
 artikelbeschrijving TEXT NOT NULL,
 aantal INT(255) NOT NULL,
 afbeelding varchar(225),
 artikelprijs DOUBLE
-)"
- */
+)"*/
