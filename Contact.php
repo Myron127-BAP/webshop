@@ -19,35 +19,35 @@
     ?>
 </header>
 
+
 <main>
     <div class="row">
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Textarea</label>
+                    <input type="text" name="subject"><br>
+                    <label for="subject">Subject </label>
                 </div>
             </div>
         </form>
     </div>
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
         <i class="material-icons right">send</i>
     </button>
+
 </main>
-<?php
-require 'PHPMailerAutoload.php';
-
-$mail = new PHPMailer;
-
-$mail->isSMTP();
-$mail->Host = 'smtp1.example.com;smtp2.example.com';
-$mail->SMTPAuth = true;
-$mail->Username = 'user@example.com';
-$mail->Password = 'secret';
-$mail->SMTPSecure = 'tls';
-?>
-
-<footer>
+s<footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>
 <!--  Scripts-->
