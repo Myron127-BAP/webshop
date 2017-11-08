@@ -18,9 +18,10 @@
     ?>
 </header>
 
-<main>
+<main style="margin-top: 30px; margin-left: 200px; margin-right: 200px;">
     <div class="carousel carousel-slider center" data-indicators="true">
-        <div class="carousel-item red white-text" href="#one!">
+        <div class="carousel-item red white-text">
+            <img src="images/Witcher3.png" alt="" style="height: 100%; width: 40%; margin-right: 1000px">
             <h2>First Panel</h2>
             <p class="white-text">This is your first panel</p>
         </div>
