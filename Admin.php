@@ -56,7 +56,7 @@
             <input type="text" placeholder="Beschrijving" name="Product_beschrijving" autocomplete="new-password"
                    required/>
                                     <input type="text" placeholder="Aantal" name="Product_aantal" required/>
-                                    <input type="text" placeholder="Product Plaatje" name="Product_plaatje"/>
+                                    <input type="text" placeholder="Product Plaatje (ALEEN PLAATJE, NIKS ANDERS)" name="Product_plaatje" required/>
                                     <input type="text" placeholder="Product Prijs" name="Product_prijs" required/>
                             <input type="submit" value="Add Product" name="Product_add"
                                    class="btn btn-block btn-primary"/></span></div>

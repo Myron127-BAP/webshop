@@ -348,15 +348,16 @@ input[type="email"]:focus
     text-align: center;
     font-weight: bold;
     font-size: 100px;
-    color: white;
+    color: black;
+    font-family: "Arial Black";
 }
 
 .BeschrijvingGame
 {
     text-align: center;
     font-weight: bold;
-    font-size: 50px;
-    color: white;
+    font-size: 10px;
+    color: black;
 }
 
 .PrijsGame
@@ -364,9 +365,11 @@ input[type="email"]:focus
     text-align: center;
     font-weight: bold;
     font-size: 25px;
-    color: white;
+    color: black;
 }
-
+.PlaatjeGame{
+    text-align: center;
+}
 .contact-page
 {
     position:relative;
