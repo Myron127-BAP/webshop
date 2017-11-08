@@ -27,6 +27,7 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
 
 </head>
 <body>
+<main>
 <div class="container">
     <br>
     <br>
@@ -63,16 +64,14 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
             <div class="card-panel">
                 <div class="card-body">
                     <div class="PrijsGame">
-                        Kost: <?= $artikel->artikelprijs; ?>
+                        Kost: €<?= $artikel->artikelprijs; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
+</main>
 </body>
 <footer>
     <?php include_once './inc/Footer.php'; ?>

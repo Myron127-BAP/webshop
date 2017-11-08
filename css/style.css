@@ -356,7 +356,7 @@ input[type="email"]:focus
 {
     text-align: center;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 25px;
     color: black;
 }
 
@@ -367,7 +367,8 @@ input[type="email"]:focus
     font-size: 25px;
     color: black;
 }
-.PlaatjeGame{
+.PlaatjeGame
+{
     text-align: center;
 }
 .contact-page

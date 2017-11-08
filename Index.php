@@ -21,21 +21,24 @@
 <main style="margin-top: 30px; margin-left: 200px; margin-right: 200px;">
     <div class="carousel carousel-slider center" data-indicators="true">
         <div class="carousel-item red white-text">
+            <a href="Artikel.php?id=1">
             <img src="images/Witcher3.png" alt="" class="responsive-img" style="height: 100%; width: 40%; margin-right: 1000px">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
+            </a>
         </div>
-        <div class="carousel-item amber white-text" href="#two!">
-            <img src="images/Dishonored.jpg" alt="" class="responsive-img" style="height: 100%; width: 40%; margin-right: 1000px">
-            <p class="white-text">This is your second panel</p>
+        <div class="carousel-item amber white-text">
+            <a href="Artikel.php?id=2">
+            <img src="images/Overwatch.jpg" alt="" class="responsive-img" style="height: 100%; width: 40%; margin-right: 1000px">
+            </a>
         </div>
-        <div class="carousel-item green white-text" href="#three!">
-            <h2>Third Panel</h2>
-            <p class="white-text">This is your third panel</p>
+        <div class="carousel-item green white-text">
+            <a href="Artikel.php?id=3">
+                <img src="images/Dota2.jpg" style="height: 100%; width: 40%; margin-right: 1000px">
+            </a>
         </div>
-        <div class="carousel-item blue white-text" href="#four!">
-            <h2>Fourth Panel</h2>
-            <p class="white-text">This is your fourth panel</p>
+        <div class="carousel-item blue white-text">
+            <a href="Artikel.php?id=4">
+                <img src="images/Fifa18.jpg" style="height: 100%; width: 40%; margin-right: 1000px">
+            </a>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
