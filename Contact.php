@@ -45,10 +45,9 @@
     <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
         <i class="material-icons right">send</i>
     </button>
-    <?php include './inc/Mail.php'; ?>
-</main>
 
-<footer>
+</main>
+s<footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>
 <!--  Scripts-->
