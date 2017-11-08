@@ -27,6 +27,7 @@
         </div>
         <div class="carousel-item amber white-text" href="#two!">
             <h2>Second Panel</h2>
+            <img src="images/Dishonored.jpg" alt="" style="height: 100%; width: 40%; margin-right: 1000px">
             <p class="white-text">This is your second panel</p>
         </div>
         <div class="carousel-item green white-text" href="#three!">
