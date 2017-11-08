@@ -2,7 +2,7 @@
 
 $mysql = new MySqli('localhost', 'root', '', 'webshop');
 
-if(isset($_GET['id'])) {
+if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
 
@@ -13,7 +13,7 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
 <!doctype html>
 <html lang="en">
 <head>
-
+    <?php include_once './inc/Header.php'; ?>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -27,14 +27,58 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
 
 </head>
 <body>
-<div class="TitelGame">
-    <?= $artikel->artikelnaam; ?>
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col m6 m12 blue-grey">
+            <div class="card-panel">
+                <div class="card-body">
+                    <div class="TitelGame">
+                        <h2><?= $artikel->artikelnaam; ?></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col m2 m3 blue-grey">
+            <div class="card-panel">
+                <div class="card-body">
+                    <div class="PlaatjeGame center-align">
+                        <image src=<?= $artikel->afbeelding; ?> width="175" height="200"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m3 m6 blue-grey">
+            <div class="card-panel">
+                <div class="card-body">
+                    <div class="BeschrijvingGame">
+                        <?= $artikel->artikelbeschrijving; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m1 m3 blue-grey">
+            <div class="card-panel">
+                <div class="card-body">
+                    <div class="PrijsGame">
+                        Kost: <?= $artikel->artikelprijs; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="BeschrijvingGame">
-    <?= $artikel->artikelbeschrijving; ?>
-</div>
-<div class="PrijsGame">
-Kost: <?= $artikel->artikelprijs; ?>
-</div>
+
+
+
 </body>
+<footer>
+    <?php include_once './inc/Footer.php'; ?>
+</footer>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 </html>
