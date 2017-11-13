@@ -19,7 +19,6 @@
     ?>
 </header>
 
-
 <main>
     <br>
     <div class="container">
@@ -60,9 +59,8 @@
             </div>
         </div>
     </div>
-
 </main>
-s
+
 <footer>
     <?php include_once './inc/Footer.php'; ?>
 </footer>

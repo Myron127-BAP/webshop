@@ -26,7 +26,7 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
     <title>Bekijk artikel ~ <?= $artikel->artikelnaam; ?></title>
 
 </head>
-<body>
+<body style="background-color: brown">
 <main>
 <div class="container">
     <br>
@@ -65,6 +65,15 @@ $artikel = $mysql->query("SELECT * FROM artikelen WHERE id = " . $mysql->escape_
                 <div class="card-body">
                     <div class="PrijsGame">
                         Kost: €<?= $artikel->artikelprijs; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m3 m3 blue-grey">
+            <div class="card-panel">
+                <div class="card-body">
+                    <div class="BeschrijvingGame">
+                        <input  class="btn btn-block btn-primary" type="submit" value="Voeg toe aan Winkelwagen" name="Winkelwagen"/>
                     </div>
                 </div>
             </div>
