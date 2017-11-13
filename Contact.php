@@ -20,6 +20,7 @@
 </header>
 
 <main>
+    <?php  include_once './inc/Mail.php'; ?>
     <br>
     <div class="container">
         <div class="row">

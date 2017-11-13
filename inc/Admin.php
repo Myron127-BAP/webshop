@@ -58,12 +58,13 @@ if (isset($_POST['Crieer'])) {
     if (!$con) {
         die("Connectie mislukt" . mysqli_connect_error());
     } else {
-        $crieer = "CREATE TABLE Gebruikers (
-id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-Gebruikersnaam VARCHAR(30) NOT NULL,
-Wachtwoord VARCHAR(300) NOT NULL,
-Email VARCHAR(500),
-reg_date TIMESTAMP
+        $crieer = "CREATE TABLE artikelen(
+            id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+artikelnaam VARCHAR(255) NOT NULL,
+artikelbeschrijving TEXT NOT NULL,
+aantal INT(255) NOT NULL,
+afbeelding varchar(225),
+artikelprijs DOUBLE
 )" ;
         if (mysqli_multi_query($con, $crieer)) {
             if ($result = mysqli_store_result($con)) {
@@ -99,13 +100,11 @@ Email VARCHAR(500),
 reg_date TIMESTAMP
 )"  */
 
-/*
- "CREATE TABLE artikelen(
+/* "CREATE TABLE artikelen(
             id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 artikelnaam VARCHAR(255) NOT NULL,
 artikelbeschrijving TEXT NOT NULL,
 aantal INT(255) NOT NULL,
 afbeelding varchar(225),
 artikelprijs DOUBLE
-)"
- */
+)"*/
