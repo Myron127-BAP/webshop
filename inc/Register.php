@@ -1,15 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Webshop";
-// Submit Data naar Database
 include 'Database.inc.php';
 
     $_SESSION['message'] = '';
-
-    $conn = new mysqli('localhost', 'root', '', 'webshop');
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($_POST['password_Register'] == $_POST['password_register2']) {
@@ -20,7 +13,8 @@ include 'Database.inc.php';
 
             $_SESSION['username'] = $username;
 
-            $sql = "INSERT INTO gebruikers(Gebruikersnaam, Email, Wachtwoord)" . "VALUES ('$username', '$email', '$password_hash')";
+            $sql = "INSERT INTO gebruikers(Gebruikersnaam, Email, Wachtwoord)"
+                    . "VALUES ('$username', '$email', '$password_hash')";
 
             if ($conn->query($sql) === true)
             {

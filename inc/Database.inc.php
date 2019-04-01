@@ -6,11 +6,11 @@
     $dbname = "Webshop";
 // Submit Data naar Database
 
-    $con = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-    if ($con->connect_error) {
+    if ($conn->connect_error) {
 
-        die("Connection mislukt: " . $con->connect_error);
+        die("Connection mislukt: " . $conn->connect_error);
 
     }
 
