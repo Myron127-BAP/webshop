@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "Webshop";
+    $dbname = "webschop";
 // Submit Data naar Database
 
     $conn = new mysqli($servername, $username, $password, $dbname);

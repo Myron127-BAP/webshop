@@ -1,6 +1,6 @@
 <?php
 
-include 'Database.inc.php';
+    include 'Database.inc.php';
 
     $_SESSION['message'] = '';
 
@@ -18,7 +18,7 @@ include 'Database.inc.php';
 
             if ($conn->query($sql) === true)
             {
-                $_SESSION['message'] = "$username is geregistreerd!";   
+                $_SESSION['message'] = "$username is geregistreerd!";
             }
             else
                 {
